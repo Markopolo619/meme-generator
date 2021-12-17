@@ -17,7 +17,7 @@ const Content = () => {
       <button className="button-17"
         
         id="reload" onClick={() => { axios.get("https://meme-api.herokuapp.com/gimme").then((res) => { setData(res.data); }); }}
-        >Button 17</button>
+        >Click Me For MORE!</button>
 
       </div>
     </main>
