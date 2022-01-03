@@ -4,6 +4,8 @@ import axios from "axios";
 const Content = () => {
   const [data, setData] = useState([]);
 
+
+
   useEffect(() => {
     axios.get("https://meme-api.herokuapp.com/gimme").then((res) => {
       setData(res.data);
