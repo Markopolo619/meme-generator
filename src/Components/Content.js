@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+3import { useState, useEffect } from "react";
 import axios from "axios";
 
 const Content = () => {
@@ -7,7 +7,7 @@ const Content = () => {
 
 
   useEffect(() => {
-    axios.get("https://meme-api.herokuapp.com/gimme").then((res) => {
+    axios.get("https://ronreiter-meme-generator.p.rapidapi.com/meme").then((res) => {
       setData(res.data);
     });
   }, []);
@@ -18,7 +18,7 @@ const Content = () => {
       <div className="button">
       <button className="button-17"
         
-        id="reload" onClick={() => { axios.get("https://meme-api.herokuapp.com/gimme").then((res) => { setData(res.data); }); }}
+        id="reload" onClick={() => { axios.get("https://ronreiter-meme-generator.p.rapidapi.com/meme").then((res) => { setData(res.data); }); }}
         >Click Me For MORE!</button>
 
       </div>
